@@ -5,15 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="bcd44926-cf0c-4150-a9a5-c32bf34a399e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-das-trincheiras.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/anime_service/AnimeServiceApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/anime_service/AnimeServiceApplicationTests.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/AnimeServiceApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/config/ConnectionConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/controller/AnimeController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/controller/ProducerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/domain/Anime.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/domain/Producer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/mapper/AnimeMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/mapper/ProducerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/repository/AnimeHardCodedRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/repository/ProducerHardCodedRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/request/AnimePostRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/request/AnimePutRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/request/ProducerPostRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/request/ProducerPutRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/response/AnimeGetResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/response/AnimePostResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/response/ProducerGetResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/response/ProducerPostResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/service/AnimeService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy.devdojo/service/ProducerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/external/dependency/Connection.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/resources/application.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -38,6 +56,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Explyt Spring.AnimeServiceApplication (1).executor": "Run",
     "Explyt Spring.AnimeServiceApplication.executor": "Run",
     "Explyt Spring.academy.devdojo.AnimeServiceApplication (1).executor": "Run",
     "Explyt Spring.academy.devdojo.AnimeServiceApplication.executor": "Run",
@@ -57,6 +76,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "onboarding.tips.debug.path": "C:/Users/Pichau/Desktop/spring-boot-das-trincheiras/anime-service/anime-service/src/main/java/academy/devdojo/Main.java",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
@@ -64,11 +84,27 @@
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\anime-service\anime-service\src\main\resources" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="academy.devdojo.response" />
     </key>
   </component>
   <component name="RunManager" selected="Explyt Spring.AnimeServiceApplication">
+    <configuration name="AnimeServiceApplication (1)" type="Spring Boot" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.AnimeServiceApplication" />
+      <module name="spring-boot-das-trincheiras" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AnimeServiceApplication" type="Spring Boot" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.AnimeServiceApplication" />
       <module name="anime-service" />
@@ -82,7 +118,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="academy.devdojo.AnimeServiceApplication" type="Spring Boot" factoryName="Spring Boot" nameIsGenerated="true">
+    <configuration name="AnimeServiceApplication" type="Spring Boot" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.AnimeServiceApplication" />
       <module name="spring-boot-das-trincheiras" />
       <method v="2">
@@ -97,7 +133,7 @@
     <recent_temporary>
       <list>
         <item itemvalue="Explyt Spring.AnimeServiceApplication" />
-        <item itemvalue="Explyt Spring.academy.devdojo.AnimeServiceApplication" />
+        <item itemvalue="Explyt Spring.AnimeServiceApplication (1)" />
       </list>
     </recent_temporary>
   </component>
