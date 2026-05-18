@@ -7,8 +7,6 @@ import lombok.extern.log4j.Log4j2;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Repository;
 
-import java.time.LocalDateTime;
-import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -17,40 +15,37 @@ import java.util.Optional;
 @RequiredArgsConstructor
 @Log4j2
 public class ProducerHardCodedRepository {
-    private static final List<Producer> PRODUCERS = new ArrayList<>();
+
+    private final ProducerData producerData;
+
+
     @Qualifier(value = "connectionMySql")
     private final Connection connection;
 
-    static {
-        var kishimoto = Producer.builder().id(1L).name("Massaki Kishimoto").createdAt(LocalDateTime.now()).build();
-        var george = Producer.builder().id(2L).name("George R.R. Martin").createdAt(LocalDateTime.now()).build();
-        var tsugumi = Producer.builder().id(3L).name("Tsugumi Ohba").createdAt(LocalDateTime.now()).build();
-        var akira = Producer.builder().id(4L).name("Akira Toriyama").createdAt(LocalDateTime.now()).build();
-        PRODUCERS.addAll(List.of(kishimoto, george, tsugumi, akira));
-    }
+
     public List<Producer> findAll() {
-        return PRODUCERS;
+        return producerData.getProducers();
     }
 
     public Optional<Producer> findById(Long id){
-        return PRODUCERS.stream()
+        return producerData.getProducers().stream()
                 .filter(producer -> producer.getId().equals(id))
                 .findFirst();
     }
 
     public List<Producer> findByName(String name){
         log.debug(connection);
-        return PRODUCERS.stream()
+        return producerData.getProducers().stream()
                 .filter(producer -> producer.getName().equalsIgnoreCase(name))
                 .toList();
     }
     public Producer save (Producer producer){
-        PRODUCERS.add(producer);
+        producerData.getProducers().add(producer);
         return producer;
     }
 
     public void delete(Producer producer){
-        PRODUCERS.remove(producer);
+        producerData.getProducers().remove(producer);
     }
 
     public void update(Producer producer){

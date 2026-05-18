@@ -13,4 +13,13 @@ public class Anime {
     private Long id;
     private String name;
 
+
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
 }
