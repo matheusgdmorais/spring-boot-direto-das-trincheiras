@@ -19,8 +19,7 @@ public class ProducerHardCodedRepository {
     private final ProducerData producerData;
 
 
-    @Qualifier(value = "connectionMySql")
-    private final Connection connection;
+
 
 
     public List<Producer> findAll() {
@@ -34,7 +33,6 @@ public class ProducerHardCodedRepository {
     }
 
     public List<Producer> findByName(String name){
-        log.debug(connection);
         return producerData.getProducers().stream()
                 .filter(producer -> producer.getName().equalsIgnoreCase(name))
                 .toList();

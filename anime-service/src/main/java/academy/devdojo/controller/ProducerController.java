@@ -32,7 +32,7 @@ public class ProducerController {
 
 
     @GetMapping()
-    public ResponseEntity<List<ProducerGetResponse>> listAll (@RequestParam (required = false)String name) {
+    public ResponseEntity<List<ProducerGetResponse>> findAll (@RequestParam (required = false)String name) {
         log.debug("Request received to list all producers, param name '{}'",name);
         var producers = service.findAll(name);
         var producerGetResponses = mapper.toProducerGetResponseList(producers);
@@ -56,8 +56,8 @@ public class ProducerController {
         log.info("{}", headers);
         var producer = mapper.toProducer(producerPostRequest);
         var producerSaved = service.save(producer);
-        var producerGetResponse = mapper.toProducerPostResponse(producerSaved);
-        return ResponseEntity.status(HttpStatus.CREATED).body(producerGetResponse);
+        var producerPostResponse = mapper.toProducerPostResponse(producerSaved);
+        return ResponseEntity.status(HttpStatus.CREATED).body(producerPostResponse);
     }
 
 

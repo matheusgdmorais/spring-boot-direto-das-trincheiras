@@ -27,7 +27,7 @@ public class AnimeController {
 
     
     @GetMapping()
-    public ResponseEntity<List<AnimeGetResponse>> listAll (@RequestParam (required = false)String name) {
+    public ResponseEntity<List<AnimeGetResponse>> findAll (@RequestParam (required = false)String name) {
         log.debug("Request received to list all anime, param name '{}'",name);
         var animes = service.findAll(name);
         var animeGetResponses = mapper.toAnimeGetResponseList(animes);
