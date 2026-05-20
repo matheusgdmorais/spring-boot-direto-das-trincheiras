@@ -1,5 +1,6 @@
 package academy.devdojo.service;
 
+import academy.devdojo.commons.AnimeUtils;
 import academy.devdojo.domain.Anime;
 import academy.devdojo.repository.AnimeHardCodedRepository;
 import org.assertj.core.api.Assertions;
@@ -27,17 +28,17 @@ class AnimeServiceTest {
     @InjectMocks
     private AnimeService service;
 
+    @InjectMocks
+    private AnimeUtils animeUtils;
+
     @Mock
     private AnimeHardCodedRepository repository;
     private List<Anime> animesList;
 
     @BeforeEach
     void init() {
-        var tyrel =  Anime.builder().id(1L).name("Margie Tyrel").build();
-        var baratheon =  Anime.builder().id(2L).name("Stennes Baratheon").build();
-        var targeryan =  Anime.builder().id(3L).name("Aemond Taregeryan").build();
-        var velaryon =  Anime.builder().id(4L).name("Rhaenys Velaryon").build();
-        animesList= new ArrayList<>(List.of(tyrel, baratheon, targeryan, velaryon));
+        animesList = animeUtils.newanimesList();
+
     }
 
     @Test
@@ -95,7 +96,7 @@ class AnimeServiceTest {
     @DisplayName("save creates a anime")
     @Order(6)
     void save_CreatesAnime_WhenSuccessful() {
-        var animeToSave = Anime.builder().id(99L).name("PENTOS ").build();
+        var animeToSave = animeUtils.newanimeToSAve();
         BDDMockito.when(repository.save(animeToSave)).thenReturn(animeToSave);
         var savedAnime = service.save(animeToSave);
         Assertions.assertThat(savedAnime).isEqualTo(animeToSave).hasNoNullFieldsOrProperties();

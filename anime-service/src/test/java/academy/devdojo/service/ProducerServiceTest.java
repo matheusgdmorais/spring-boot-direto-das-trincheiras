@@ -1,5 +1,6 @@
 package academy.devdojo.service;
 
+import academy.devdojo.commons.ProducerUtils;
 import academy.devdojo.domain.Producer;
 import academy.devdojo.repository.ProducerHardCodedRepository;
 import org.assertj.core.api.Assertions;
@@ -32,12 +33,12 @@ class ProducerServiceTest {
     private ProducerHardCodedRepository repository;
     private List<Producer> producersList;
 
+    @InjectMocks
+    ProducerUtils producerUtils;
+
     @BeforeEach
     void init() {
-        var teste = Producer.builder().id(1L).name("TESTEEE").createdAt(LocalDateTime.now()).build();
-        var junit = Producer.builder().id(2L).name("JUUUNIT").createdAt(LocalDateTime.now()).build();
-        var java = Producer.builder().id(3L).name("JAVAAA").createdAt(LocalDateTime.now()).build();
-        producersList = new ArrayList<>(List.of(teste, junit, java));
+        producersList = producerUtils.newProducerList();
     }
 
     @Test
@@ -95,7 +96,7 @@ class ProducerServiceTest {
     @DisplayName("save creates a producer")
     @Order(6)
     void save_CreatesProducer_WhenSuccessful() {
-        var producerToSave = Producer.builder().id(99L).name("MAPPA").createdAt(LocalDateTime.now()).build();
+        var producerToSave = producerUtils.newProducerToSAve();
         BDDMockito.when(repository.save(producerToSave)).thenReturn(producerToSave);
         var savedProducer = service.save(producerToSave);
         Assertions.assertThat(savedProducer).isEqualTo(producerToSave).hasNoNullFieldsOrProperties();
