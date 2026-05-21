@@ -4,71 +4,69 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4fc1d816-c4a4-4d34-a0ec-c7d0e8a4dfa1" name="Changes" comment="finalizado as classes HardCodedRepository nos testes Unitarios">
+    <list default="true" id="952bdd05-82b1-4107-84bc-b50f826db789" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/config/ConnectionBeanConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/.mvn/wrapper/maven-wrapper.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/mvnw" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/mvnw.cmd" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/java/academy/devdojo/UserServiceApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/academy/devdojo/UserServiceApplicationTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/academy/devdojo/commons/FileUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/user-service/src/test/java/academy/devdojo/commons/UserUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/explyt-spring-native-settings.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/AnimeServiceApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/AnimeServiceApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/config/ConnectionConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/controller/AnimeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/controller/AnimeController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/controller/ProducerController.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/controller/ProducerController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/domain/Anime.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/domain/Anime.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/domain/Producer.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/domain/Producer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/mapper/AnimeMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/mapper/AnimeMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/mapper/ProducerMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/mapper/ProducerMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/AnimeData.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/AnimeData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/AnimeHardCodedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/AnimeHardCodedRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/ProducerData.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/ProducerData.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/ProducerHardCodedRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/repository/ProducerHardCodedRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/service/AnimeService.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/service/AnimeService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/service/ProducerService.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/service/ProducerService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/java/external/dependency/Connection.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/java/academy/devdojo/config/Connection.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/anime-service/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/controller/AnimeControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/controller/AnimeControllerTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/controller/ProducerControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/controller/ProducerControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/repository/AnimeHardCodedRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/repository/AnimeHardCodedRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/repository/ProducerHardCodedRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/repository/ProducerHardCodedRepositoryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/service/AnimeServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/service/AnimeServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/service/ProducerServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo/service/ProducerServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-  </component>
-  <component name="ExternalProjectsData">
-    <projectState path="-DebugSession-">
-      <ProjectState />
-    </projectState>
-  </component>
-  <component name="ExternalProjectsManager">
-    <system id="EXPLYTSPRINGBOOT">
-      <state>
-        <projects_view>
-          <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="-DebugSession-" type="f1a62948:ProjectNode" />
-              </path>
-            </expand>
-            <select />
-          </tree_state>
-        </projects_view>
-      </state>
-    </system>
-  </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JUnit5 Test Class" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
-  </component>
-  <component name="FormatOnSaveOptions">
-    <option name="myRunOnSave" value="true" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="McpProjectServerCommands">
-    <commands />
-    <urls />
-  </component>
-  <component name="ProblemsViewState">
-    <option name="selectedTabId" value="CurrentFile" />
-  </component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0,
+  &quot;associatedIndex&quot;: 1,
   &quot;fromUser&quot;: false
 }</component>
-  <component name="ProjectId" id="3Dj66RQ6QFIJoZocJR9RD45GJv0" />
+  <component name="ProjectId" id="3E0F8R7vlZck4DKlx0boEh8MqWI" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -76,60 +74,37 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "Explyt Spring.AnimeServiceApplication.executor": "Run",
-    "JUnit.All in anime-service.executor": "Coverage",
-    "JUnit.AnimeControllerTest.executor": "Run",
-    "JUnit.AnimeControllerTest.findAll_ReturnsAllAnimes_WhenArgumentIsNull.executor": "Run",
-    "JUnit.AnimeControllerTest.findAll_ReturnsAnimesById_WhenSucessful.executor": "Run",
-    "JUnit.AnimeControllerTest.findAll_ReturnsEmptyList_WhenNameIsNotFound.executor": "Run",
-    "JUnit.AnimeControllerTest.findAll_ReturnsFoundAnimeInList_WhenNameIsFound.executor": "Run",
-    "JUnit.AnimeControllerTest.findById_ThrowsResponseStatusException_WhenSucessful.executor": "Run",
+    "Explyt Spring.UserServiceApplication.executor": "Run",
     "JUnit.AnimeControllerTest.save_CreatesAnime_WhenSuccessful.executor": "Run",
-    "JUnit.AnimeHardCodedRepositoryTest.executor": "Run",
-    "JUnit.AnimeHardCodedRepositoryTest.save_CreatesAnime_WhenSuccessful.executor": "Run",
-    "JUnit.AnimeServiceTest.executor": "Coverage",
-    "JUnit.ProducerControllerTest.delete_RemoveProducer_WhenSucessful.executor": "Debug",
-    "JUnit.ProducerControllerTest.delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound.executor": "Debug",
-    "JUnit.ProducerControllerTest.executor": "Run",
-    "JUnit.ProducerControllerTest.findAll_ReturnsAllProducers_WhenArgumentIsNull.executor": "Debug",
-    "JUnit.ProducerControllerTest.findAll_ReturnsEmptyList_WhenNameIsNotFound.executor": "Run",
-    "JUnit.ProducerControllerTest.findAll_ReturnsFoundProducerInList_WhenNameIsFound.executor": "Run",
-    "JUnit.ProducerControllerTest.findAll_ReturnsProducersById_WhenSucessful.executor": "Run",
-    "JUnit.ProducerControllerTest.findById_ThrowsResponseStatusException_WhenSucessful.executor": "Run",
-    "JUnit.ProducerControllerTest.save_CreatesProducer_WhenSuccessful.executor": "Debug",
-    "JUnit.ProducerControllerTest.update_ThrowsResponseStatusException_WhenSuccessful.executor": "Debug",
-    "JUnit.ProducerControllerTest.update_UpdatesProducer_WhenSuccessful.executor": "Coverage",
-    "JUnit.ProducerHardCodedRepositoryTest.delete_RemoveProducer_WhenSucessful.executor": "Debug",
-    "JUnit.ProducerHardCodedRepositoryTest.executor": "Run",
-    "JUnit.ProducerHardCodedRepositoryTest.findAll_ReturnsAllProducers_WhenSucessful.executor": "Run",
-    "JUnit.ProducerHardCodedRepositoryTest.findAll_ReturnsEmptyList_WhenNameIsNull.executor": "Debug",
-    "JUnit.ProducerHardCodedRepositoryTest.save_CretaesProducer_WhenSuccessful.executor": "Debug",
-    "JUnit.ProducerHardCodedRepositoryTest.update_UpdatesProducer_WhenSuccessful.executor": "Debug",
-    "JUnit.ProducerServiceTest.delete_RemoveProducer_WhenSucessful.executor": "Debug",
-    "JUnit.ProducerServiceTest.delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound.executor": "Debug",
-    "JUnit.ProducerServiceTest.executor": "Debug",
-    "JUnit.ProducerServiceTest.findAll_ReturnsEmptyList_WhenNameIsNotFound.executor": "Debug",
-    "JUnit.ProducerServiceTest.findById_ThrowsResponseStatusException_WhenSucessful.executor": "Debug",
-    "JUnit.ProducerServiceTest.update_ThrowsResponseStatusException_WhenSuccessful.executor": "Debug",
-    "JUnit.ProducerServiceTest.update_UpdatesProducer_WhenSuccessful.executor": "Debug",
-    "JUnit.academy.devdojo in anime-service.executor": "Run",
-    "JUnit.academy.devdojo.repository in anime-service.executor": "Coverage",
-    "JUnit.devdojo in anime-service.executor": "Coverage",
-    "JUnit.java in anime-service.executor": "Run",
-    "Maven.spring-boot-das-trincheiras [compile].executor": "Run",
-    "Maven.spring-boot-das-trincheiras [install].executor": "Run",
+    "JUnit.UserControllerTest.delete_RemoveUser_WhenSucessful.executor": "Run",
+    "JUnit.UserControllerTest.delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound.executor": "Run",
+    "JUnit.UserControllerTest.executor": "Run",
+    "JUnit.UserControllerTest.findAll_ReturnsAllUsers_WhenArgumentIsNull.executor": "Run",
+    "JUnit.UserControllerTest.findAll_ReturnsEmptyList_WhenFirstNameIsNotFound.executor": "Run",
+    "JUnit.UserControllerTest.findAll_ReturnsEmptyList_WhenNameIsNotFound.executor": "Run",
+    "JUnit.UserControllerTest.findAll_ReturnsFoundUserInList_WhenNameIsFound.executor": "Run",
+    "JUnit.UserControllerTest.findAll_ReturnsUsersById_WhenSucessful.executor": "Run",
+    "JUnit.UserControllerTest.findById_ThrowsResponseStatusException_WhenSucessful.executor": "Run",
+    "JUnit.UserControllerTest.save_CreatesUser_WhenSuccessful.executor": "Run",
+    "JUnit.UserControllerTest.update_ThrowsResponseStatusException_WhenSuccessful.executor": "Run",
+    "JUnit.UserControllerTest.update_UpdatesUser_WhenSuccessful.executor": "Run",
+    "JUnit.UserHardCodedRepositoryTest.executor": "Run",
+    "JUnit.UserServiceApplicationTests.executor": "Run",
+    "JUnit.UserServiceTest.executor": "Run",
+    "JUnit.academy.devdojo in user-service.executor": "Run",
+    "JUnit.devdojo in user-service.executor": "Run",
+    "Maven.user-service [org.apache.maven.plugins:maven-clean-plugin:3.4.1:clean].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.MCP Project settings loaded": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "codeWithMe.voiceChat.enabledByDefault": "false",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "C:/Users/Pichau/Desktop/spring-boot-das-trincheiras/anime-service/src/test/resources/producer",
+    "last_opened_file_path": "C:/Users/Pichau/Desktop/spring-boot-das-trincheiras/user-service/src/test/resources/user",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -138,145 +113,114 @@
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.16896552",
-    "settings.editor.selected.configurable": "preferences.sourceCode"
+    "settings.editor.selected.configurable": "preferences.lookFeel"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\anime-service\src\test\resources\producer" />
+      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\user-service\src\test\resources\user" />
+      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\user-service\src\main\resources\user" />
+      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\user-service\src\test\java\academy\devdojo\commons" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\anime-service\src\test\resources\anime" />
+      <recent name="C:\Users\Pichau\Desktop\spring-boot-das-trincheiras\user-service\src\test\resources\user" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
       <recent name="academy.devdojo.controller" />
+      <recent name="academy.devdojo" />
       <recent name="academy.devdojo.service" />
       <recent name="academy.devdojo.repository" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="academy.devdojo.commons" />
+      <recent name="academy.devdojo.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.devdojo in anime-service">
-    <configuration name="AnimeHardCodedRepositoryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.devdojo in user-service">
+    <configuration name="AnimeControllerTest.save_CreatesAnime_WhenSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="anime-service" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="academy.devdojo.repository.*" />
+          <option name="PATTERN" value="academy.devdojo.controller.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="PACKAGE_NAME" value="academy.devdojo.repository" />
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.repository.AnimeHardCodedRepositoryTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="MakeProject" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimeHardCodedRepositoryTest.save_CreatesAnime_WhenSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anime-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="PACKAGE_NAME" value="academy.devdojo.repository" />
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.repository.AnimeHardCodedRepositoryTest" />
+      <option name="PACKAGE_NAME" value="academy.devdojo.controller" />
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.controller.AnimeControllerTest" />
       <option name="METHOD_NAME" value="save_CreatesAnime_WhenSuccessful" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="MakeProject" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimeServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anime-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="PACKAGE_NAME" value="academy.devdojo.service" />
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.service.AnimeServiceTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="MakeProject" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="AnimeServiceTest.save_CreatesAnime_WhenSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anime-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.service.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="PACKAGE_NAME" value="academy.devdojo.service" />
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.service.AnimeServiceTest" />
-      <option name="METHOD_NAME" value="save_CreatesAnime_WhenSuccessful" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="MakeProject" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProducerHardCodedRepositoryTest" type="JUnit" factoryName="JUnit" nameIsGenerated="true">
-      <module name="anime-service" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="academy.devdojo.repository.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="PACKAGE_NAME" value="academy.devdojo.repository" />
-      <option name="MAIN_CLASS_NAME" value="academy.devdojo.repository.ProducerHardCodedRepositoryTest" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JUnit" factoryName="JUnit">
-      <module name="anime-service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="class" />
+    <configuration name="UserControllerTest.delete_RemoveUser_WhenSucessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="academy.devdojo.controller" />
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="delete_RemoveUser_WhenSucessful" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
-        <option name="MakeProject" enabled="true" />
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="devdojo in anime-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="anime-service" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
-      <option name="ALTERNATIVE_JRE_PATH" value="TEMURIO-ESSE-AQUI-MESMO" />
-      <option name="MAIN_CLASS_NAME" value="" />
-      <option name="METHOD_NAME" value="" />
-      <option name="TEST_OBJECT" value="directory" />
-      <dir value="$PROJECT_DIR$/anime-service/src/test/java/academy/devdojo" />
+    <configuration name="UserControllerTest.delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="academy.devdojo.controller" />
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
-        <option name="MakeProject" enabled="true" />
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserControllerTest.update_ThrowsResponseStatusException_WhenSuccessful" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="academy.devdojo.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="academy.devdojo.controller" />
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.controller.UserControllerTest" />
+      <option name="METHOD_NAME" value="update_ThrowsResponseStatusException_WhenSuccessful" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="devdojo in user-service" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="user-service" />
+      <option name="TEST_OBJECT" value="directory" />
+      <dir value="$PROJECT_DIR$/user-service/src/test/java/academy/devdojo" />
+      <method v="2">
+        <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="AnimeServiceApplication" type="Spring Boot" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="academy.devdojo.AnimeServiceApplication" />
       <module name="anime-service" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserServiceApplication" type="Spring Boot" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="academy.devdojo.UserServiceApplication" />
+      <module name="user-service" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -288,109 +232,25 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.devdojo in anime-service" />
-        <item itemvalue="JUnit.AnimeServiceTest" />
-        <item itemvalue="JUnit.AnimeServiceTest.save_CreatesAnime_WhenSuccessful" />
-        <item itemvalue="JUnit.AnimeHardCodedRepositoryTest" />
-        <item itemvalue="JUnit.AnimeHardCodedRepositoryTest.save_CreatesAnime_WhenSuccessful" />
+        <item itemvalue="JUnit.devdojo in user-service" />
+        <item itemvalue="JUnit.AnimeControllerTest.save_CreatesAnime_WhenSuccessful" />
+        <item itemvalue="JUnit.UserControllerTest.delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound" />
+        <item itemvalue="JUnit.UserControllerTest.delete_RemoveUser_WhenSucessful" />
+        <item itemvalue="JUnit.UserControllerTest.update_ThrowsResponseStatusException_WhenSuccessful" />
       </list>
     </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4fc1d816-c4a4-4d34-a0ec-c7d0e8a4dfa1" name="Changes" comment="" />
-      <created>1778782956344</created>
+      <changelist id="952bdd05-82b1-4107-84bc-b50f826db789" name="Changes" comment="" />
+      <created>1779307419797</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1778782956344</updated>
+      <updated>1779307419797</updated>
     </task>
-    <task id="LOCAL-00001" summary="finalizado as classes HardCodedRepository nos testes Unitarios">
-      <option name="closed" value="true" />
-      <created>1779063623336</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1779063623336</updated>
-    </task>
-    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
-  </component>
-  <component name="Vcs.Log.Tabs.Properties">
-    <option name="RECENT_FILTERS">
-      <map>
-        <entry key="Branch">
-          <value>
-            <list>
-              <RecentGroup>
-                <option name="FILTER_VALUES">
-                  <option value="main" />
-                </option>
-              </RecentGroup>
-            </list>
-          </value>
-        </entry>
-      </map>
-    </option>
-    <option name="TAB_STATES">
-      <map>
-        <entry key="MAIN">
-          <value>
-            <State>
-              <option name="CUSTOM_BOOLEAN_PROPERTIES">
-                <map>
-                  <entry key="Show.Git.Branches" value="true" />
-                </map>
-              </option>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
-          </value>
-        </entry>
-      </map>
-    </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="finalizado as classes HardCodedRepository nos testes Unitarios" />
-    <option name="LAST_COMMIT_MESSAGE" value="finalizado as classes HardCodedRepository nos testes Unitarios" />
-  </component>
-  <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$ProducerControllerTest_update_UpdatesProducer_WhenSuccessful.ic" NAME="ProducerControllerTest.update_UpdatesProducer_WhenSuccessful Coverage Results" MODIFIED="1779212543881" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.controller.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$ProducerHardCodedRepositoryTest.ic" NAME="ProducerHardCodedRepositoryTest Coverage Results" MODIFIED="1779056747146" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$AnimeServiceTest.ic" NAME="AnimeServiceTest Coverage Results" MODIFIED="1779114495055" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$academy_devdojo_repository_in_anime_service.ic" NAME="academy.devdojo.repository in anime-service Coverage Results" MODIFIED="1779059330671" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$AnimeControllerTest_findAll_ReturnsFoundAnimeInList_WhenNameIsFound.ic" NAME="AnimeControllerTest.findAll_ReturnsFoundAnimeInList_WhenNameIsFound Coverage Results" MODIFIED="1779214941459" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.controller.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$devdojo_in_anime_service.ic" NAME="devdojo in anime-service Coverage Results" MODIFIED="1779217413286" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$ProducerServiceTest.ic" NAME="ProducerServiceTest Coverage Results" MODIFIED="1779072871391" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.service.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$All_in_anime_service.ic" NAME="All in anime-service Coverage Results" MODIFIED="1779114574211" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true" />
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$AnimeHardCodedRepositoryTest.ic" NAME="AnimeHardCodedRepositoryTest Coverage Results" MODIFIED="1779059310542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.repository.*</FILTER>
-    </SUITE>
-    <SUITE FILE_PATH="coverage/spring_boot_das_trincheiras$ProducerControllerTest.ic" NAME="ProducerControllerTest Coverage Results" MODIFIED="1779213305049" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="true">
-      <FILTER>academy.devdojo.controller.*</FILTER>
-    </SUITE>
   </component>
 </project>

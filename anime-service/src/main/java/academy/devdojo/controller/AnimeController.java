@@ -7,8 +7,6 @@ import academy.devdojo.request.AnimePutRequest;
 import academy.devdojo.response.AnimeGetResponse;
 import academy.devdojo.response.AnimePostResponse;
 import academy.devdojo.service.AnimeService;
-import academy.devdojo.mapper.AnimeMapper;
-import academy.devdojo.request.AnimePostRequest;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -19,16 +17,16 @@ import java.util.List;
 
 @Slf4j
 @RestController
-@RequestMapping ("v1/animes")
+@RequestMapping("v1/animes")
 @RequiredArgsConstructor
 public class AnimeController {
     private final AnimeMapper mapper;
     private final AnimeService service;
 
-    
+
     @GetMapping()
-    public ResponseEntity<List<AnimeGetResponse>> findAll (@RequestParam (required = false)String name) {
-        log.debug("Request received to list all anime, param name '{}'",name);
+    public ResponseEntity<List<AnimeGetResponse>> findAll(@RequestParam(required = false) String name) {
+        log.debug("Request received to list all anime, param name '{}'", name);
         var animes = service.findAll(name);
         var animeGetResponses = mapper.toAnimeGetResponseList(animes);
         return ResponseEntity.ok(animeGetResponses);
@@ -36,8 +34,8 @@ public class AnimeController {
 
 
     @GetMapping("{id}")
-    public ResponseEntity <AnimeGetResponse> findById (@PathVariable Long id) {
-        log.debug("Request to find anime by id :{}",id);
+    public ResponseEntity<AnimeGetResponse> findById(@PathVariable Long id) {
+        log.debug("Request to find anime by id :{}", id);
         var anime = service.findByIdOrThrowNotFound(id);
         var animeGetResponse = mapper.toAnimeGetResponse(anime);
         return ResponseEntity.ok(animeGetResponse);
@@ -46,7 +44,7 @@ public class AnimeController {
 
     //Idempotente
     @PostMapping
-    public ResponseEntity<AnimePostResponse> save (@RequestBody AnimePostRequest request){
+    public ResponseEntity<AnimePostResponse> save(@RequestBody AnimePostRequest request) {
         log.debug("{}", request);
         var anime = mapper.toAnime(request);
         var animeSaved = service.save(anime);
@@ -56,16 +54,16 @@ public class AnimeController {
 
 
     @DeleteMapping("{id}")
-    public ResponseEntity<Void> deleteById(@PathVariable Long id){
-        log.debug("Request to delete anime by id: {}",id);
+    public ResponseEntity<Void> deleteById(@PathVariable Long id) {
+        log.debug("Request to delete anime by id: {}", id);
         service.delete(id);
         return ResponseEntity.noContent().build();
     }
 
 
     @PutMapping()
-    public ResponseEntity<Void> update (@RequestBody AnimePutRequest request){
-        log.debug("Request to update anime : {}",request);
+    public ResponseEntity<Void> update(@RequestBody AnimePutRequest request) {
+        log.debug("Request to update anime : {}", request);
         var animeToUpdate = mapper.toAnime(request);
         service.update(animeToUpdate);
         return ResponseEntity.noContent().build();

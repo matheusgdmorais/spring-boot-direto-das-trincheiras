@@ -1,9 +1,12 @@
 spring:
   application:
     name: anime-service
+
+  profiles:
+    active: mysql
   threads:
-   virtual:
-     enabled: true
+    virtual:
+      enabled: true
 
 logging:
   level:
@@ -16,4 +19,9 @@ server:
     include-stacktrace: on_param
   tomcat:
     threads:
-      max : 20
+      max: 20
+
+database:
+  url: ${DB_URL:localhost}:${DB_PORT:3006}
+  username: ${LOCAL_USERNAME:matheusgdmorais}
+  password: ${LOCAL_PASSWORD:18213536}

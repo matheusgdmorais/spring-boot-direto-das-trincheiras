@@ -17,13 +17,14 @@ public interface AnimeMapper {
 
     AnimeMapper INSTANCE = Mappers.getMapper(AnimeMapper.class);
 
-    @Mapping(target =  "id", expression =  "java(java.util.concurrent.ThreadLocalRandom.current().nextLong(100_000))")
+    @Mapping(target = "id", expression = "java(java.util.concurrent.ThreadLocalRandom.current().nextLong(100_000))")
     Anime toAnime(AnimePostRequest postRequest);
 
-    AnimePostResponse toAnimePostResponse (Anime anime);
+    AnimePostResponse toAnimePostResponse(Anime anime);
+
     AnimeGetResponse toAnimeGetResponse(Anime anime);
 
-    List<AnimeGetResponse> toAnimeGetResponseList(List<Anime>animes);
+    List<AnimeGetResponse> toAnimeGetResponseList(List<Anime> animes);
 
     Anime toAnime(AnimePutRequest request);
 }

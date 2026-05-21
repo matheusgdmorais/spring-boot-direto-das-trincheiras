@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: user-service
+
+  profiles:
+    active: mysql
+  threads:
+    virtual:
+      enabled: true
+
+logging:
+  level:
+    academy.devdojo: debug
+
+server:
+  port: 8090
+  servlet:
+    context-path: /
+  error:
+    include-stacktrace: on_param
+  tomcat:
+    threads:
+      max: 20

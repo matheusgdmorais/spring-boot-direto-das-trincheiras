@@ -1,12 +1,14 @@
-package external.dependency;
+package academy.devdojo.config;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import lombok.ToString;
 
 @ToString
 @AllArgsConstructor
+@Getter
 public class Connection {
-    private int localhost;
+    private String localhost;
     private String username;
-    private int password;
+    private String password;
 }

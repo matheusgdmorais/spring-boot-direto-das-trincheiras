@@ -1,6 +1,9 @@
 package academy.devdojo.domain;
 
-import lombok.*;
+import lombok.Builder;
+import lombok.EqualsAndHashCode;
+import lombok.Getter;
+import lombok.Setter;
 
 @Getter
 @Setter
@@ -12,7 +15,6 @@ public class Anime {
 
     private Long id;
     private String name;
-
 
 
     public void setName(String name) {
