@@ -1,12 +1,15 @@
 package academy.devdojo.controller;
 
 
+import academy.devdojo.exception.DefaultErrorMessage;
+import academy.devdojo.exception.NotFoundException;
 import academy.devdojo.mapper.AnimeMapper;
 import academy.devdojo.request.AnimePostRequest;
 import academy.devdojo.request.AnimePutRequest;
 import academy.devdojo.response.AnimeGetResponse;
 import academy.devdojo.response.AnimePostResponse;
 import academy.devdojo.service.AnimeService;
+import jakarta.validation.Valid;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.http.HttpStatus;
@@ -44,7 +47,7 @@ public class AnimeController {
 
     //Idempotente
     @PostMapping
-    public ResponseEntity<AnimePostResponse> save(@RequestBody AnimePostRequest request) {
+    public ResponseEntity<AnimePostResponse> save(@RequestBody @Valid AnimePostRequest request) {
         log.debug("{}", request);
         var anime = mapper.toAnime(request);
         var animeSaved = service.save(anime);
@@ -62,10 +65,12 @@ public class AnimeController {
 
 
     @PutMapping()
-    public ResponseEntity<Void> update(@RequestBody AnimePutRequest request) {
+    public ResponseEntity<Void> update(@RequestBody @Valid AnimePutRequest request) {
         log.debug("Request to update anime : {}", request);
         var animeToUpdate = mapper.toAnime(request);
         service.update(animeToUpdate);
         return ResponseEntity.noContent().build();
     }
+
+
 }

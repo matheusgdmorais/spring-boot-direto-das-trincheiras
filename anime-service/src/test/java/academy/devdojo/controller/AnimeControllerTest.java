@@ -6,7 +6,11 @@ import academy.devdojo.commons.FileUtils;
 import academy.devdojo.domain.Anime;
 import academy.devdojo.repository.AnimeData;
 import academy.devdojo.repository.AnimeHardCodedRepository;
+import org.assertj.core.api.Assertions;
 import org.junit.jupiter.api.*;
+import org.junit.jupiter.params.ParameterizedTest;
+import org.junit.jupiter.params.provider.Arguments;
+import org.junit.jupiter.params.provider.MethodSource;
 import org.mockito.ArgumentMatchers;
 import org.mockito.BDDMockito;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,7 +24,9 @@ import org.springframework.test.web.servlet.request.MockMvcRequestBuilders;
 import org.springframework.test.web.servlet.result.MockMvcResultHandlers;
 import org.springframework.test.web.servlet.result.MockMvcResultMatchers;
 
+import java.util.ArrayList;
 import java.util.List;
+import java.util.stream.Stream;
 
 
 @WebMvcTest(controllers = AnimeController.class)
@@ -110,15 +116,17 @@ class AnimeControllerTest {
 
 
     @Test
-    @DisplayName("GET v1/animes/99 throws ResponseStatusException 404 when anime is not found")
+    @DisplayName("GET v1/animes/99 throws NotFound 404 when anime is not found")
     @Order(5)
-    void findById_ThrowsResponseStatusException_WhenSucessful() throws Exception {
+    void findById_ThrowsNotFound_WhenSucessful() throws Exception {
+        var response = fileUtils.readResourceFile("/anime/get-anime-by-id-404.json");
+
         BDDMockito.when(animeData.getAnimes()).thenReturn(animesList);
         var id = 99L;
         mockMvc.perform(MockMvcRequestBuilders.get(URL + "/{id}", id))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound())
-                .andExpect(MockMvcResultMatchers.status().reason("Anime not Found"));
+                .andExpect(MockMvcResultMatchers.content().json(response));
     }
 
 
@@ -162,11 +170,15 @@ class AnimeControllerTest {
 
 
     @Test
-    @DisplayName("PUT v1/animes throws ResponseStatusException when anime is not found")
+    @DisplayName("PUT v1/animes throws NotFound when anime is not found")
     @Order(8)
-    void update_ThrowsResponseStatusException_WhenSuccessful() throws Exception {
+    void update_ThrowsNotFound_WhenSuccessful() throws Exception {
         BDDMockito.when(animeData.getAnimes()).thenReturn(animesList);
+
         var request = fileUtils.readResourceFile("anime/put-request-anime-404.json");
+        var response = fileUtils.readResourceFile("anime/put-anime-by-id-404.json");
+
+
         mockMvc.perform(MockMvcRequestBuilders
                         .put(URL)
                         .content(request)
@@ -174,7 +186,7 @@ class AnimeControllerTest {
                 )
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound())
-                .andExpect(MockMvcResultMatchers.status().reason("Anime not Found"));
+                .andExpect(MockMvcResultMatchers.content().json(response));
     }
 
 
@@ -191,16 +203,91 @@ class AnimeControllerTest {
 
 
     @Test
-    @DisplayName("DELETE v1/animes/99 throws ResponseStatusExeption when a anime is not found")
+    @DisplayName("DELETE v1/animes/99 throws NotFound when a anime is not found")
     @Order(10)
-    void delete_ThrowsResponseStatusExeption_WhenSucessfulIsNotFound() throws Exception {
+    void delete_ThrowsNotFound_WhenSucessfulIsNotFound() throws Exception {
+        var response = fileUtils.readResourceFile("/anime/delete-anime-by-id-404.json");
+
         BDDMockito.when(animeData.getAnimes()).thenReturn(animesList);
         var id = 99L;
         mockMvc.perform(MockMvcRequestBuilders.delete(URL + "/{id}", id))
                 .andDo(MockMvcResultHandlers.print())
                 .andExpect(MockMvcResultMatchers.status().isNotFound())
-                .andExpect(MockMvcResultMatchers.status().reason("Anime not Found"));
+                .andExpect(MockMvcResultMatchers.content().json(response));
 
     }
+
+    @ParameterizedTest
+    @MethodSource("postAnimeBadRequestSource")
+    @DisplayName("POST v1/animes returns bad request when fields are invalid")
+    @Order(12)
+    void save_ReturnsBadRequst_WhenFieldsAreInvalid(String fileName, List <String> errors) throws Exception {
+        var request = fileUtils.readResourceFile("anime/%s".formatted(fileName));
+
+
+        var mvcresult = mockMvc.perform(MockMvcRequestBuilders
+                        .post(URL)
+                        .content(request)
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andReturn();
+        var resolvedException = mvcresult.getResolvedException();
+
+        Assertions.assertThat(resolvedException).isNotNull();
+
+        Assertions.assertThat(resolvedException.getMessage()).contains(errors);
+
+    }
+    @ParameterizedTest
+    @MethodSource("putAnimeBadRequestSource")
+    @DisplayName("PUT v1/animes returns bad request when fields are invalid")
+    @Order(13)
+    void update_ReturnsBadRequst_WhenFieldsAreInvalid(String fileName, List <String> errors) throws Exception {
+        var request = fileUtils.readResourceFile("anime/%s".formatted(fileName));
+
+
+        var mvcresult = mockMvc.perform(MockMvcRequestBuilders
+                        .put(URL)
+                        .content(request)
+                        .contentType(MediaType.APPLICATION_JSON)
+                )
+                .andDo(MockMvcResultHandlers.print())
+                .andExpect(MockMvcResultMatchers.status().isBadRequest())
+                .andReturn();
+        var resolvedException = mvcresult.getResolvedException();
+
+        Assertions.assertThat(resolvedException).isNotNull();
+
+        Assertions.assertThat(resolvedException.getMessage()).contains(errors);
+
+    }
+    private static Stream<Arguments> putAnimeBadRequestSource(){
+        var allRequiredErrors = allRequiredErrors();
+        allRequiredErrors.add("the field 'id' cannot be null");
+
+        return Stream.of(
+                Arguments.of("put-request-anime-empty-fields-400.json",allRequiredErrors()),
+                Arguments.of("put-request-anime-blank-fields-400.json",allRequiredErrors())
+        );
+    }
+
+
+    private static Stream<Arguments> postAnimeBadRequestSource(){
+        var allErrors = allRequiredErrors();
+
+        return Stream.of(
+                Arguments.of("post-request-anime-empty-fields-400.json",allErrors),
+                Arguments.of("post-request-anime-blank-fields-400.json",allErrors)
+        );
+    }
+
+
+    private static List<String> allRequiredErrors(){
+        var nameRequiredError= "the field 'name' is required";
+        return new ArrayList<>(List.of(nameRequiredError));
+    }
+
 
 }
