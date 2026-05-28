@@ -1,4 +1,5 @@
 academy\devdojo\exception\CustomNotFoundException.class
 academy\devdojo\exception\GlobalErrorHandlerAdvice.class
 academy\devdojo\exception\DefaultErrorMessage.class
+academy\devdojo\exception\EmailAlreadyExistsException.class
 academy\devdojo\exception\NotFoundException.class

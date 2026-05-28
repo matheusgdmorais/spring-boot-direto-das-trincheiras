@@ -2,9 +2,9 @@ services:
   mysql:
     image: mysql:9.7.0
     environment:
-      MYSQL_ROOT_PASSWORD: devdojo
-      MYSQL_USER: matheus
-      MYSQL_PASSWORD: academy
+      MYSQL_ROOT_PASSWORD: ${ENV_ROOT_PASSWORD}
+      MYSQL_USER: ${ENV_MYSQL_PASSWORD}
+      MYSQL_PASSWORD: ${ENV_MYSQL_USER}
     ports:
       - "3306:3306"
     volumes:

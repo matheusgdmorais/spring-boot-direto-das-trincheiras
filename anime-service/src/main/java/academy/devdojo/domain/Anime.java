@@ -1,27 +1,29 @@
 package academy.devdojo.domain;
 
-import lombok.Builder;
-import lombok.EqualsAndHashCode;
-import lombok.Getter;
-import lombok.Setter;
+import jakarta.persistence.*;
+import lombok.*;
 
 @Getter
 @Setter
 @Builder
 @EqualsAndHashCode(onlyExplicitlyIncluded = true)
+@Entity
+@NoArgsConstructor
+@AllArgsConstructor
 public class Anime {
+
     @EqualsAndHashCode.Include
-
-
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
     private String name;
 
-
-    public void setName(String name) {
-        this.name = name;
+    public Anime withId(Long id) {
+        return this.id == id ? this : new Anime(id, this.name);
     }
 
-    public void setId(Long id) {
-        this.id = id;
+    public Anime withName(String name) {
+        return this.name == name ? this : new Anime(this.id, name);
     }
+
 }
